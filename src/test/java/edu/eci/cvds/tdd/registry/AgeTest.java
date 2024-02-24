@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class AgeTest {
     @Test
-    public void ShouldPassUnderagePerson() {
+    public void ShouldPassUnderagePerson() throws Exception {
         // Menor de edad
         Person person = new Person("Milton", 54321, 17, Gender.MALE, true);
         int age = person.getAge();
@@ -20,7 +20,7 @@ public class AgeTest {
     }
 
     @Test
-    public void ShouldNotPassPassUnderagePerson() {
+    public void ShouldNotPassPassUnderagePerson() throws Exception {
         // Menor de edad
         Person person = new Person("Milton", 54321, 18, Gender.MALE, true);
         int age = person.getAge();
@@ -34,7 +34,7 @@ public class AgeTest {
     }
 
     @Test
-    public void ShouldNotPassValidAgePerson() {
+    public void ShouldNotPassValidAgePerson() throws Exception {
         // Edad invalida:  edad < 0
         Person person = new Person("Mutsia", 67890, -5, Gender.MALE, true);
         int age = person.getAge();
