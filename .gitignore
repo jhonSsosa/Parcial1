@@ -1,0 +1,21 @@
+# Archivos generados por IntelliJ IDEA
+.idea/
+
+# Archivos de configuración de IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+
+# Logs y archivos temporales
+*.log
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+
+# Configuración de Visual Studio Code
+.vscode/
+
+# Directorios y archivos no necesarios
+target/
+
+
